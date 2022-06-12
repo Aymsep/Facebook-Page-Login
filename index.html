@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/inst-icon.png">
+    <title>Instagram</title>
+</head>
+<body>
+    <!--preloader page containing instagram logo and meta img-->
+<div class="preloader">
+<img class="insta-logo" src="images/inst-icon.png" alt="" width="85" height="85" >
+<div class="meta">
+    <img  class="meta-logo" src="images/Instagram-Meta-Logo.png" alt="" width="155" height="65">
+</div>
+</div>
+    <!--end of preloader page-->
+
+    <!--container containing phone with animation and form-->
+<div class="container">
+    <!--first div containing phone image-->
+    <div class="grid1">
+        <img src="images/phone-img.png" alt="" width="450">
+    </div>
+
+    <!-- div img containing image animation in the background-->
+    <div class="img1">
+    </div>
+    <!---->
+
+    <!--second div containing form elements and 3 images -->
+    <div class="grid2">
+
+        <!--form -->
+        <form action="">
+            <!--instagram header as img-->
+            <img src="images/instagram-header.png" alt=""><br>
+
+            <!--input fields-->
+            <input type="email" name="Email" placeholder="Phone number, username or email address"><br>
+            <input type="password" name="Password" placeholder="Password"><br>
+
+            <!--button-->
+            <button type="submit">Log in</button>
+
+            <!--span or beetween two lines in the css-->
+            <span class="spn">or</span><br><br>
+
+            <!--header and anchor-->
+             <h4>Log in with facebook</h4><br>
+             <a>Forgotten your password?</a>
+        </form>
+        <!--end of form-->
+
+        <!--sign up little div-->
+        <div class="sign-up">
+            <span>Don't have an account? <a href="#">Sign up</a></sp>
+        </div>
+
+        <!--div containing span and two images with links-->
+        <div class="getapp">
+        <span>Get the app.</span>
+        <img src="images/apple-store.png" class="apple" alt="apple image">
+        <img src="images/google-play.png" class="google" alt="google image">
+        </div>
+    </div>
+</div>
+<!--end of the container-->
+
+<!--tags below form and phone image-->
+<div class="tags-container1">
+<a href="#">meta</a>
+<a href="#">About</a>
+<a href="#">Blog</a>
+<a href="#">Jobs</a>
+<a href="#">Help</a>
+<a href="#">API</a>
+<a href="#">Privacy</a>
+<a href="#">Hashtags</a>
+<a href="#">Locations</a>
+<a href="#">Instagram Lite</a>
+</div>
+
+<!--tags below form and phone image-->
+<div class="tags-container2">
+    <a href="#">Contact uploading and non-users</a>
+    <a href="#">Visual arts</a>
+    <a href="#">Music</a>
+    <a href="#">Home garden</a>
+    <a href="#">Food  & drink</a>
+    <a href="#">Dance</a>
+</div>
+<!--copyright paragraph-->
+<p id="copyright">© 2022 Instagram from Meta</p>
+<!--add some internal js to make the preloader page fade out after 3s -->
+<!--internal js are not recommended anyway , always use external js -->
+
+<script>
+    const loader = document.querySelector(".preloader");
+    setTimeout(() => loader.style.display = "none",4000)
+</script>
+
+<!--end of structure-->
+
+</body>
+</html>

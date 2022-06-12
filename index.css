@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*background color white*/
+body{
+    background-color: #fbf8f8;
+}
+
+/*preloader page style*/
+.preloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width:100%;
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+}
+
+/*meta logo style*/
+.meta{
+    position:absolute;
+    bottom: 10px;
+}
+
+/*preloader page animation style*/
+.preloader img.insta-logo{
+    animation:rotate 2s linear infinite alternate;
+}
+
+@keyframes rotate {
+    0%{
+        transform:translateX(45px)
+    }
+    100%{
+        transform:translateX(-45px)
+        
+    }
+}
+/*end preloader style */
+
+/*container styles*/
+.container{
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    padding-top: 30px;
+    margin-top:-40px;
+}
+
+/*div inside container to be above the phone image*/
+.img1{
+    position: absolute;
+   background:url("images/image-animation1.png") no-repeat center;
+    background-size: cover;
+    width:255px;
+    height: 525px;
+    margin:0 250px 50px 0;
+    border-radius:0 0 27px 27px;
+    z-index: 10;
+    animation:spin 7s ease-in-out infinite alternate;
+}
+
+/*make the image switch between them*/
+@keyframes spin {
+    0%{
+    background:url("images/image-animation1.png");
+    animation-duration: 2s;
+    }
+
+    25%{
+    background:url("images/image-animation2.png");
+    animation-duration: 4s;
+    }
+
+    50%{
+    background:url("images/image-animation3.png");
+    animation-duration: 6s;
+    }
+
+    100%{
+    background:url("images/image-animation4.png");
+    animation-duration: 8s;
+    }
+}
+/*end of absolute image style*/
+
+/*grid2 containing form*/
+.grid2{
+    text-align: center;
+    height:600px;
+    width: 350px;
+}
+
+/*form style*/
+.grid2 form{
+    border: 1px solid #e8e8e8;
+    padding:35px 25px 25px;
+    background-color: white;
+    margin:10px 10px;
+}
+/*instagram header as img*/
+form img{
+    padding-bottom: 30px;
+}
+
+/*input fields*/
+form input{
+    padding:12px;
+    margin-bottom:10px;
+    width:100%;
+    background-color: #faf8f8;
+    outline: none;
+    border: 1px solid #e8e8e8;
+}
+
+/*button*/
+form button{
+    margin: 3px 0 15px;
+    width: 100%;
+    padding:5px;
+    font-weight: bold;
+    color: white;
+    background-color: #0095f6;
+    border-color: transparent;
+    border-radius:4px;
+}
+
+/*or beetwen line*/
+form span:first-of-type{
+    text-transform:uppercase ;
+    font-size: 13px;
+    font-weight:bold;
+    color: #c1c1c1;
+}
+
+/*first line*/
+form span:first-of-type::after{
+    content:" ";
+    width: 130px;
+    height:2px;
+    background-color:#e8e8e8;
+    display:inline-block;
+    position:absolute;
+    margin: 8px 0 0 10px;
+}
+
+/*second line*/
+form span:first-of-type::before{
+    content:" ";
+    width: 130px;
+    height:2px;
+    background-color:#e8e8e8;
+    display:inline-block;
+    position:absolute;
+    margin: 8px 0 0 -138px;
+}
+
+/*header with facebook icon*/
+form h4{
+    cursor: pointer;
+    padding-top:20px;
+    color: #385185;
+}
+
+/*facebook icon before header*/
+form h4::before{
+    content:" ";
+    background-image: url("images/face-icon.png");
+    position:absolute;
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    margin:-4px 0 0 -33px;
+}
+
+/*anchor*/
+form a{
+    cursor: pointer;
+    color: #385185;
+    font-size: 14px;
+}
+/*end of form style */
+
+/*sign up style*/
+.sign-up{
+    margin:10px 10px;
+    padding:20px;
+    border: 1px solid #e8e8e8;
+    background-color: white;
+}
+
+/*anchor*/
+.sign-up a{
+    color: #3e85b0;
+}
+/*end of sign up style*/
+
+/*get app style*/
+.getapp{
+    margin-top:20px;
+}
+
+/*getapp span*/
+.getapp span{
+    display:block;
+    margin-bottom:15px;
+}
+
+/*image google */
+.getapp img.google{
+    width: 115px;
+}
+
+/*image apple*/
+.getapp img.apple{
+    width: 115px;
+}
+/*end of grid2 container*/
+
+/*tags container1 containing tags anchor*/
+.tags-container1{
+    text-transform: capitalize;
+    margin-top: -80px;
+    text-align: center;
+}
+
+/*anchor tags*/
+.tags-container1 a{
+    color: #c1c1c1;
+    padding: 8px;
+}
+
+
+/*tags container2 containing tags anchor*/
+.tags-container2{
+    text-transform: capitalize;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*anchor tags*/
+.tags-container2 a{
+    font-size: 14px;
+    color: #c1c1c1;
+    padding: 8px;
+}
+
+/*paragraph copyright*/
+#copyright{
+    padding:15px 0 8px;
+    text-align: center;
+    color: #c1c1c1;
+}
+/*end of styles*/
+
+
+/*media queries for md , sm screen*/
+
+@media screen and (max-width:864px){
+    .grid1,.img1,.tags-container1,.tags-container2{
+        display:none;
+    }
+}
